@@ -56,12 +56,137 @@ header ul li a {
     text-decoration: none;
     color: white;
 }
+#servicios {
+    scroll-margin-top: 70px;
+}
 main {
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.servicioss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgb(217, 235, 250);
+}
+.servicioss .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicioss .titulo h1 {
+    font-size: 60px;
+    color: rgb(165, 74, 9);
+}
+.servicioss .titulo p {
+    font-size: 24px;
+    color: rgb(165, 74, 9);
+}
+.servicioss .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.servicioss .menu .empanadas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    gap: 20px;
+}
+.servicioss .menu .empanadas .empanada {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(255, 196, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 153, 0);
+    box-shadow: 8px 12px 24px rgba(255, 196, 0, 0.959);
+    height: 100%;
+    width: 90%;
+    background-color: rgb(122, 61, 4);
+    border-radius: 10px;
 
+}
+.servicioss .menu .empanadas .empanada:hover {
+    background-color: #643805e3;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+
+.elegirnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #b964043d;
+    justify-content: center;
+}
+.elegirnos h2 {
+    font-size: 60px;
+    color: rgb(255, 136, 0);
+    margin-bottom: 120px; 
+}
+.elegirnos .cartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin-top: -20px;
+    
+}
+.elegirnos .cartas .carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(165, 74, 9);
+    box-shadow: 8px 12px 18px rgba(255, 196, 0, 0.678);
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+}
+.elegirnos .cartas .carta:hover {
+    background-color: #cfb08c86;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+.elegirnos .cartas .carta img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.cartas .carta strong {
+    font-size: 24px;
+    color: rgb(165, 74, 9);
+}
+.cartas .carta p {
+    font-size: 18px;
+    color: rgb(165, 74, 9);
 }
 
 footer {
@@ -71,6 +196,8 @@ footer {
     align-items: center;
     background-color: rgb(165, 74, 9);
     padding: 10px 0;
+    width: 100%;
+    bottom: 0;
 }
 footer p {
     padding: 0 20px;
