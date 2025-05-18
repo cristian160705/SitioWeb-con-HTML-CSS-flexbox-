@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color: rgb(165, 74, 9);
+    padding: 10px 0;
+    z-index: 100;
+}
+header strong {
+    padding: 0 20px;
+    font-size: 30px;
+    color: white;
+}
+header strong span {
+    color: #ffe600;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    flex-direction: row;
+    padding: 0 20px;
+    margin: 0;
+    gap: 20px;
+    font-size: 18px; ;
+}
+header ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+header ul li:hover {
+    background-color: #dd8520;
+    transition: 0.3s;
+
+}
+header ul li a {
+    margin: 0;
+    padding: 18px 28px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-color: rgb(217, 235, 250); 
+}
+#inicio {
+    scroll-margin-top: 70px;
+}
+
+main .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h1 {
+    font-size: 50px;
+    color: #dd8520;
+}
+.titulo p {
+    color: #5c3509;
+    font-size: 20px;
+}
+main .menu {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu .empanadas {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 25s linear infinite;
+    list-style: none;
+}
+.menu .empanadas .empanada {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: aliceblue;
+    font-size: 0.9rem;
+    background-color: #dd8520; 
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0.2rem #00000033 ,
+                0 0.1rem 0.5rem #0000004d ,
+                0 0.2rem 1.5rem #00000066 ;
+}
+.fade {
+    position: absolute;
+    background: linear-gradient(90deg, #884703 , transparent 30%, transparent 70%, #814105);
+    inset: 0;
+    pointer-events: none;
+}
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ContenidoPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.ContenidoPrincipal table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: solid 1px #dd8520;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.1rem 0.2rem #ff5f0333 ,
+                0 0.1rem 0.5rem #0000004d ,
+                0 0.2rem 1.5rem #00000066 ;
+
+
+}
+.ContenidoPrincipal table caption {
+    font-size: 30px;
+    color: #dd8520;
+}
+
+.ContenidoPrincipal table thead th{
+    color: rgb(116, 44, 3);
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #dd8520;
+}
+.ContenidoPrincipal table tbody th{
+    color: rgb(116, 44, 3);
+    padding: 13px 1px;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #dd8520;
+}
+.ContenidoPrincipal table tr{
+    border: solid 1px #dd8520;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20 40px;
+    font-size: 20px;
+}
+
+.ContenidoPrincipal table td{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #dd8520;
+    padding: 20 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+.ContenidoPrincipal img{
+    width: 500px;
+    height: 300px;
+    border: solid 2px #dd8520;
+    box-shadow: 8px 12px 18px #ff6600
+}
+.ContenidoPrincipal figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 12px;
+    font-size: 12px
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(165, 74, 9);
+    padding: 10px 0;
+}
+footer p {
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+}
+footer div {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer div p {
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+}
+footer div ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-direction: row;
+    padding: 0 20px;
+    margin: 0;
+    gap: 20px;
+}
+footer div ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+footer div ul li i {
+    font-size: 20px;
+    color: white;
+}
